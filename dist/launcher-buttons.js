@@ -7999,7 +7999,7 @@ const launcherData = {
       "button": '<svg xmlns="http://www.w3.org/2000/svg" width="345" height="750" viewBox="0 0 345 750" stroke="#000" stroke-linecap="round" stroke-linejoin="round" fill="#fff" fill-rule="evenodd"><defs><linearGradient id="ZPuK" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="0%" stop-color="#c3c6cf"/><stop offset="100%" stop-color="#f9f9f9"/></linearGradient><linearGradient id="RHIM" x1="56%" y1="0%" x2="44%" y2="100%"><stop offset="47%" stop-color="#061333"/><stop offset="97%" stop-color="#01419b"/></linearGradient></defs><g fill-rule="nonzero" stroke="none"><path d="M337.505 218.753v469.555c.002 22.367-16.234 41.429-38.318 44.983h0a805.02 805.02 0 0 1-255.869 0h0C21.236 729.737 5 710.679 5 688.313v-469.56" fill="#c3c6cf"/><path d="M0 166.865C0 74.422 74.422 0 166.865 0h0C259.308 0 333.73 74.422 333.73 166.865v46.886c0 92.443-74.422 166.865-166.865 166.865h0C74.422 380.616 0 306.194 0 213.751z" fill="url(#ZPuK)" transform="translate(5 5)"/><path d="M47.616 177.853c0-68.834 55.415-124.249 124.249-124.249h-.002c68.834 0 124.249 55.415 124.249 124.249v34.911c0 68.834-55.415 124.248-124.249 124.248h.002c-68.834 0-124.249-55.414-124.249-124.248z" fill="url(#RHIM)"/></g><circle cx="170.73" cy="420" fill="#2ba7ff" stroke-width=".5" r="10"/><circle cx="173.73" cy="180" fill="#324968" stroke="#677697" stroke-width="6" r="100"/><circle cx="172.23" cy="177.5" stroke="#02429a" fill="#2ba7ff" stroke-width="10" r="52.5"/></svg>',
       "friendlyName": "Unifi Protect",
       "className": "unifiProtectButton",
-      "deviceFamily": ["apple-tv", "homatics", "onn"],
+      "deviceFamily": ["apple-tv", "homatics", "nvidia-shield", "onn"],
       "apple-tv": {
           "appName": "Protect",
       },
@@ -8008,6 +8008,11 @@ const launcherData = {
           "androidName": "com.ubnt.unifi.protect",
           "adbLaunchCommand": "adb shell am start -n com.ubnt.unifi.protect/com.ubnt.sections.splash.AuthenticationActivity",
       },
+      "nvidia-shield": {
+          "appName": "com.ubnt.unifi.protect",
+          "androidName": "com.ubnt.unifi.protect",
+          "adbLaunchCommand": "adb shell am start -n com.ubnt.unifi.protect/com.ubnt.sections.splash.AuthenticationActivity",
+      },    
       "onn": {
           "appName": "com.ubnt.unifi.protect",
           "androidName": "com.ubnt.unifi.protect",
